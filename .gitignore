@@ -3,4 +3,4 @@
 *.iws
 build
 .idea
-.gradl
+.gradle

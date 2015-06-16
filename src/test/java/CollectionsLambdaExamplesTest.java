@@ -50,7 +50,8 @@ public class CollectionsLambdaExamplesTest {
             }
         }*/
 
-        friends.stream().filter(n -> n.startsWith("N")).collect(Collectors.toList())
+        friends.stream().filter(n -> n.startsWith("N"))
+                .collect(Collectors.toList())
                 .forEach(System.out::println);
     }
 

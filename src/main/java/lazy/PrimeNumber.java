@@ -27,12 +27,8 @@ public class PrimeNumber {
         else if (n % 2 == 0)
             return false;
 
-        return !IntStream.range(3, roofRoot(n))
+        return !IntStream.rangeClosed(3, (int)Math.sqrt(n))
                 .boxed()
                 .anyMatch(i -> n % i == 0);
-    }
-
-    private static int roofRoot(double n) {
-        return ((int) Math.sqrt(n)) + 1;
     }
 }

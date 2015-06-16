@@ -13,6 +13,7 @@ public class Primes {
                         .noneMatch(divisor -> number % divisor == 0);
     }
 
+    //consider stepping over the even numbers (+ 2?)
     private static int primeAfter(final int number) {
         if (isPrime(number + 1))
             return number + 1;
